@@ -1,0 +1,194 @@
+/* South Indian Chart Styles - Reference Image Style */
+
+.south-indian-chart {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1px;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  background: #333;
+}
+
+.chart-house {
+  background: white;
+  border: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  min-height: 0;
+}
+
+.chart-house.ascendant-house {
+  background: #e8f5e8;
+}
+
+/* House number styling - small blue numbers in corners */
+.house-number {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  font-size: 11px;
+  color: #2196f3;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Planets container - center content */
+.planets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+  padding: 16px 4px 4px 4px;
+}
+
+/* Planet abbreviation styling */
+.planet-abbrev {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Rahu styling with parentheses */
+.planet-abbrev.rahu {
+  color: #d32f2f;
+}
+
+/* Ketu styling with parentheses */
+.planet-abbrev.ketu {
+  color: #d32f2f;
+}
+
+/* Center info styling */
+.center-info {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.chart-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chart-type {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1;
+}
+
+.chart-subtype {
+  font-size: 10px;
+  color: #666;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .south-indian-chart {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .chart-grid {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .chart-house {
+    padding: 6px;
+  }
+  
+  .chart-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .house-number {
+    font-size: 10px;
+  }
+  
+  .planet-abbrev {
+    font-size: 12px;
+  }
+  
+  .planets-container {
+    padding: 14px 3px 3px 3px;
+  }
+  
+  .chart-type {
+    font-size: 11px;
+  }
+  
+  .chart-subtype {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-grid {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .chart-house {
+    padding: 4px;
+  }
+  
+  .house-number {
+    font-size: 9px;
+    top: 2px;
+    left: 2px;
+  }
+  
+  .planet-abbrev {
+    font-size: 11px;
+  }
+  
+  .planets-container {
+    padding: 12px 2px 2px 2px;
+    gap: 2px;
+  }
+  
+  .chart-type {
+    font-size: 10px;
+  }
+  
+  .chart-subtype {
+    font-size: 8px;
+  }
+  
+  .chart-title {
+    font-size: 1.1rem;
+  }
+}
